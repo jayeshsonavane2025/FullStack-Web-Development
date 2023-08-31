@@ -1,0 +1,41 @@
+ol>li::marker {
+    font-weight: bold;
+}
+html{
+    scroll-behavior: smooth;
+}
+.div1{
+    height: 100%;
+     
+    background-color:rgb(254, 254, 154);
+    margin: 80px 80px 80px 80px ;
+    border: 2px solid black;
+    box-shadow: 10px 10px 10px 10px lightblue;
+    padding: 2rem;
+}
+img:hover{
+    height: 220px ;
+}
+aside {
+    width: 40%;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+}
+h1:hover{
+    color: orangered;
+}
+img{
+    border-radius: 10px;
+}
+h2{
+    background-color: orange;
+    display: inline-block;
+}
+h1{
+    background-color: rgb(198, 152, 242);
+    border-radius: 10px;
+}

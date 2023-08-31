@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="item">Box1</div>
+        <div class="item">Box2</div>
+    </div>
+</body>
+
+<style>
+   .container {
+  display: grid;
+  margin: 200px 0 0 450px;
+  grid-template-columns: 1fr 1fr; /* Divide the grid into two equal columns */
+  grid-template-rows:   1fr; 
+  width: 600px;
+  height: 400px;
+
+  border-radius: 20px;
+  background-color: blanchedalmond; 
+}
+
+.item {
+  background-color: #3498db;
+  color: white;
+ 
+  text-align: center;
+  padding: 20px;
+  
+}
+</style>
+</html>
