@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <script src="./script.js" defer></script>
+
+    <link rel="icon" type="image/x-icon" href="https://www.freeiconspng.com/thumbs/forgot-password-icon/forgot-password-icon-0.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+    <link rel="stylesheet" href="./style.css" />
+        <link rel="icon" type="image/x-icon" href="https://www.freeiconspng.com/thumbs/forgot-password-icon/forgot-password-icon-0.png" />
+
+            <link rel="icon" type="image/x-icon" href="https://www.freeiconspng.com/thumbs/forgot-password-icon/forgot-password-icon-0.png" />
+
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- Container -->
+      <div class="container">
+        <!-- Heading  -->
+        <div>
+          <h1 class="heading">Password Generator</h1>
+        </div>
+
+        <!-- Display Container  -->
+        <div class="displayContainer">
+          <input type="text" placeholder="Password" readonly passwordDisplay />
+          <button class="copyBtn">
+            <span copyMessage></span>
+            <img src="./images/copy.svg" alt="copy" width="24" height="24" />
+          </button>
+        </div>
+
+        <!-- Input Container  -->
+        <div class="inputContainer">
+          <div class="lengthContainer">
+            <p>Password Length</p>
+            <p lengthDisplay></p>
+          </div>
+
+          <input type="range" min="1" max="20" step="1" class="slider"/>
+
+          <!-- Checkboxes  -->
+          <div>
+            <div class="check">
+              <input type="checkbox" name="" id="uppercase" />
+              <label for="uppercase">include uppercase letters</label>
+            </div>
+            <div class="check">
+              <input type="checkbox" name="" id="lowercase" />
+              <label for="lowercase">include lowercase letters</label>
+            </div>
+            <div class="check">
+              <input type="checkbox" name="" id="numbers" />
+              <label for="numbers">include numbers</label>
+            </div>
+            <div class="check">
+              <input type="checkbox" name="" id="symbols" />
+              <label for="symbols">include symbols</label>
+            </div>
+          </div>
+
+          <!-- Strength Container -->
+          <div class="strengthContainer">
+            <p>Strength</p>
+            <div class="indicator"></div>
+          </div>
+
+          <!-- Button  -->
+          <button id="generateBtn">Generate password</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <a href="https://www.linkedin.com/in/jayeshsonawanercpit/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    
+      <a href="https://github.com/jayeshsonavane2025" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:sonwanejayesh830@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.instagram.com/sonawanejayesh2003/?igshid=ZDc4ODBmNjlmNQ%3D%3D" target="_blank"><i
+          class="fab fa-instagram"></i></a>
+    
+      <p>&copy; Jayesh Sonavane | Design with <i class="fas fa-heart"></i></p>
+    </div>
+    <style>
+      .footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 30px 0;
+      }
+    
+      .footer a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 20px;
+        transition: color 0.3s;
+      }
+    
+      .footer a:hover {
+        color: #5aa7de;
+        font-size: 25px;
+    
+      }
+    
+      .footer p {
+        margin: 10px 0;
+      }
+    </style>
+  </body>
+
+</html>
